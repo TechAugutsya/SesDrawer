@@ -26,12 +26,10 @@ fun DashboardContent(
             .verticalScroll(rememberScrollState())
             .padding(20.dp)
     ) {
-        // Welcome Header
         WelcomeHeader(uiState)
 
         Spacer(modifier = Modifier.height(30.dp))
 
-        // Getting Started Card
         FeatureCard(onOpenDrawer)
 
         Spacer(modifier = Modifier.height(24.dp))

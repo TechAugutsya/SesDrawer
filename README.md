@@ -2,7 +2,7 @@
 
 SesDrawer is a modern Android application built with **Jetpack Compose** that demonstrates a dynamic, API-driven Navigation Drawer following Material 3 design principles.
 
-## 🚀 Features
+##  Features
 
 - **Dynamic Data Fetching**: Fetches navigation items and user profiles from a remote REST API using Retrofit.
 - **Custom Profile Section**: Displays user avatar and name in a stylized card layout.
@@ -11,7 +11,7 @@ SesDrawer is a modern Android application built with **Jetpack Compose** that de
 - **Interactive Dashboard**: A clean, modern home screen with a welcome greeting, getting started guide, and quick statistics.
 - **Robust Error Handling**: Includes loading states, null-safety for API responses, and a "Retry" mechanism for network failures.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **UI**: Jetpack Compose (Material 3)
 - **Networking**: Retrofit 2 & OkHttp 3
@@ -21,13 +21,13 @@ SesDrawer is a modern Android application built with **Jetpack Compose** that de
 - **Asynchrony**: Kotlin Coroutines & Flow
 - **Navigation**: Compose Navigation
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Android Studio Koala or newer.
 - JDK 17 or 21.
 - Android API Level 24+ (Min SDK) / 36 (Compile SDK).
 
-## ⚙️ Installation & Setup
+## ️ Installation & Setup
 
 1. **Clone the Project**:
    ```bash
@@ -49,7 +49,7 @@ SesDrawer is a modern Android application built with **Jetpack Compose** that de
    - `sesapi_platform`: 1
    - `auth_token`: B179086bb56c32731633335762
 
-## 🏗 Project Structure
+##  Project Structure
 
 - **`data/`**: Contains `NavigationModels` (JSON mapping), `ApiService` (Retrofit interface), and `NavigationRepository`.
 - **`viewmodel/`**: Contains `DrawerViewModel` for state management and `DrawerUiState` for handling Success/Error/Loading.
@@ -57,14 +57,14 @@ SesDrawer is a modern Android application built with **Jetpack Compose** that de
 - **`ui/component/`**: Reusable Compose components like `ProfileSection`, `AppsSection`, and `DrawerGridItem`.
 - **`MainScreen.kt`**: The primary dashboard layout that hosts the `ModalNavigationDrawer`.
 
-## 🏃 How to Run
+##  How to Run
 
 1. Connect an Android device or launch an Emulator.
 2. Click the **Run** button in Android Studio.
 3. The app will launch directly into the **Dashboard**. 
 4. Click the **Menu Icon** (top-left) or the **"Open Drawer"** button to see the dynamic navigation drawer.
 
-## 🛠 Troubleshooting
+##  Troubleshooting
 
 - **API returned empty response**: This usually means the `auth_token` provided by the server has expired. Verify the token in `NavigationRepository.kt`.
 - **Unresolved References (GET/Retrofit)**: Perform a `File > Invalidate Caches > Invalidate and Restart` to fix IDE indexing issues.

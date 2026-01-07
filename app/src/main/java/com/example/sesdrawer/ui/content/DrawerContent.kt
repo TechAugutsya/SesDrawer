@@ -40,7 +40,6 @@ fun DrawerContent(
             .verticalScroll(rememberScrollState())
             .padding(16.dp)
     ) {
-        // Header
         Row(
             modifier = Modifier.fillMaxWidth().padding(bottom = 20.dp),
             verticalAlignment = Alignment.CenterVertically,
@@ -99,7 +98,6 @@ fun DrawerContent(
         Spacer(Modifier.height(16.dp))
 
         sections.forEach { section ->
-            // Skip empty headers before Message/Notifications
             if (section.name.isEmpty() && section.items.isEmpty()) return@forEach
             
             if (section.name.contains("APPS", ignoreCase = true)) {
@@ -110,7 +108,6 @@ fun DrawerContent(
             Spacer(Modifier.height(16.dp))
         }
 
-        // Sign Out (Static or from API)
         val signOutItem = sections.flatMap { it.items }.find { it.label == "Sign Out" }
         if (signOutItem != null) {
             Box(

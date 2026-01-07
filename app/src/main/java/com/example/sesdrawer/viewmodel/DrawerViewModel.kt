@@ -60,11 +60,9 @@ class DrawerViewModel(
 
         items.forEach { item ->
             if (item.type == 0) {
-                // If we were already building a section, save it
                 if (currentItems.isNotEmpty() || currentSectionName.isNotEmpty()) {
                     sections.add(MenuSection(currentSectionName, currentItems))
                 }
-                // Start a new section
                 currentSectionName = item.label ?: ""
                 currentItems = mutableListOf()
             } else {
@@ -72,7 +70,6 @@ class DrawerViewModel(
             }
         }
         
-        // Add the last section
         if (currentItems.isNotEmpty() || currentSectionName.isNotEmpty()) {
             sections.add(MenuSection(currentSectionName, currentItems))
         }

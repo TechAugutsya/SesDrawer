@@ -20,7 +20,7 @@ data class ResultData(
 
 data class MenuItem(
     @SerializedName("type")
-    val type: Int? = null, // 0 for header, 1 for item
+    val type: Int? = null,
     @SerializedName("label")
     val label: String? = null,
     @SerializedName("icon")
@@ -29,7 +29,6 @@ data class MenuItem(
     val module: String? = null
 )
 
-// Internal UI model to represent sections
 data class MenuSection(
     val name: String,
     val items: List<MenuItem>
