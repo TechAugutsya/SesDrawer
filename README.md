@@ -2,6 +2,9 @@
 
 SesDrawer is a modern Android application built with **Jetpack Compose** that demonstrates a dynamic, API-driven Navigation Drawer following Material 3 design principles.
 
+##  Git Configuration
+This project is configured to ignore local IDE settings (like the `.idea` folder). This ensures that environment-specific configurations don't interfere with other developers' setups. If you've already committed these files, please refer to the Troubleshooting section for removal instructions.
+
 ##  Features
 
 - **Dynamic Data Fetching**: Fetches navigation items and user profiles from a remote REST API using Retrofit.
@@ -11,7 +14,7 @@ SesDrawer is a modern Android application built with **Jetpack Compose** that de
 - **Interactive Dashboard**: A clean, modern home screen with a welcome greeting, getting started guide, and quick statistics.
 - **Robust Error Handling**: Includes loading states, null-safety for API responses, and a "Retry" mechanism for network failures.
 
-##  Tech Stack
+## Tech Stack
 
 - **UI**: Jetpack Compose (Material 3)
 - **Networking**: Retrofit 2 & OkHttp 3
@@ -27,7 +30,7 @@ SesDrawer is a modern Android application built with **Jetpack Compose** that de
 - JDK 17 or 21.
 - Android API Level 24+ (Min SDK) / 36 (Compile SDK).
 
-## ️ Installation & Setup
+##  Installation & Setup
 
 1. **Clone the Project**:
    ```bash
@@ -69,6 +72,9 @@ SesDrawer is a modern Android application built with **Jetpack Compose** that de
 - **API returned empty response**: This usually means the `auth_token` provided by the server has expired. Verify the token in `NavigationRepository.kt`.
 - **Unresolved References (GET/Retrofit)**: Perform a `File > Invalidate Caches > Invalidate and Restart` to fix IDE indexing issues.
 - **Build Errors**: Ensure your `build.gradle.kts` matches the `compileSdk = 36` requirement for the latest Android 15 libraries.
+  ```bash
+ 
+  ```
 
 ---
 *Created for the Social Networking Solutions (SNS) Navigation Task.*
